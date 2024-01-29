@@ -3,20 +3,27 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100vh;
-  margin-top: 20px;
+  height: 100%;
+  margin-top: 25px;
 }
 
 .content__cover > img {
   width: 500px;
   min-width: 500px;
   height: 300px;
-  border: 5px solid rgb(144, 144, 144);
+  box-shadow: 3px 3px 7px rgb(86, 86, 86);
   border-radius: 5px;
 }
 
-.content__description {
+.content__title {
   margin-top: 15px;
+  max-width: 60%;
+  text-align: center;
+}
+
+.content__description {
+  margin-top: 20px;
+  width: 60%;
 }
 
 .content__description > p {
