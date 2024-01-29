@@ -18,12 +18,10 @@ export class SmallCardComponent implements OnInit {
 
   ngOnInit(): void {
     this.setValuesToComponent(this.Id);
-    console.log("id "+ this.Id)
   }
 
   setValuesToComponent(id: string | null) {
     const result = dataFake.filter(article => article.id == id)[0]
-    // console.log(result.photoCover)
     this.photoCover = result.photoCover;
     this.cardTitle = result.title;
   }
